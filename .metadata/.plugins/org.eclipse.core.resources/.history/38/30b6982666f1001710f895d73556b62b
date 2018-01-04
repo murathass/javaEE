@@ -1,0 +1,10 @@
+package marshallingSample;
+
+public class OgrenciObject2XML {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

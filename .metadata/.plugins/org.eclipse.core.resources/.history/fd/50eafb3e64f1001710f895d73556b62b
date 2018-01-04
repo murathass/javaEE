@@ -1,0 +1,11 @@
+package marshallingSample;
+
+public class Ogrenci {
+
+	@XMLRootElement
+	@XMLAccesorType(XmlAccesType.FIELD)
+	@XMLType(name="ogrenciTipi",propOrder = {"ad","soyad","ders"})
+	public Ogrenci() {
+		
+	}
+}

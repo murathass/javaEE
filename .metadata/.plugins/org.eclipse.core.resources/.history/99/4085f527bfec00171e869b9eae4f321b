@@ -1,0 +1,34 @@
+package pck;
+
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.ContentHandler;
+import org.xml.sax.DTDHandler;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXNotRecognizedException;
+import org.xml.sax.SAXNotSupportedException;
+import org.xml.sax.helpers.DefaultHandler;
+
+public class SaxParser  extends DefaultHandler{
+
+	public static void main(String[] args) {
+
+		SAXParserFactory factory = SAXParserFactory.newInstance();
+		
+		try {
+			SAXParser reader = factory.newSAXParser();
+			reader.parse(new File("Ogrenci.xml"), new XmlReader());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

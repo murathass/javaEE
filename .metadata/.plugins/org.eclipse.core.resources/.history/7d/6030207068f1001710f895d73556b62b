@@ -1,0 +1,5 @@
+package unmarshallingsample;
+
+public class OgrenciXML2Object {
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ogrenciler xmlns:tns="http://www.example.org/Ogrenci" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Ogrenci Ogrenci.xsd ">
+  <tns:ogrenci>
+    <tns:ad>tns:ad</tns:ad>
+    <tns:soyad>tns:soyad</tns:soyad>
+    <tns:yas>0</tns:yas>
+    <tns:adres>
+      <tns:il>tns:il</tns:il>
+      <tns:ilce>tns:ilce</tns:ilce>
+    </tns:adres>
+    <tns:dersler>
+      <tns:ders>tns:ders</tns:ders>
+      <tns:ilce>tns:ilce</tns:ilce>
+    </tns:dersler>
+  </tns:ogrenci>
+</tns:ogrenciler>

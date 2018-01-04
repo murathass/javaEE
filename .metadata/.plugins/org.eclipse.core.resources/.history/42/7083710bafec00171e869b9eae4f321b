@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ogrenciler xmlns:tns="http://www.faikturan.com/ogrenci" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.faikturan.com/ogrenci ogrenci.xsd ">
+  <ogrenci no="1">
+    <ad>faik</ad>
+    <soyad>turan</soyad>
+    <yas>39</yas>
+    <adres>
+      <il>İstanbul</il>
+      <ilce>Avcılar</ilce>
+    </adres>
+    <dersler>
+      <ders>Matematik</ders>
+      <ders>Fizik</ders>
+      <ders>Kimya</ders>
+      <ders>Edebiyat</ders>
+    </dersler>
+  </ogrenci>
+  <ogrenci no="2">
+    <ad>ali</ad>
+    <soyad>gel</soyad>
+    <yas>30</yas>
+    <adres>
+      <il>İstanbul</il>
+      <ilce>Pendik</ilce>
+    </adres>
+    <dersler>
+      <ders>Matematik</ders>
+      <ders>Fizik</ders>
+      <ders>Kimya</ders>
+      <ders>Edebiyat</ders>
+    </dersler>
+  </ogrenci>
+  <ogrenci no="3">
+    <ad>ayse</ad>
+    <soyad>koç</soyad>
+    <yas>25</yas>
+    <adres>
+      <il>İstanbul</il>
+      <ilce>Üsküdar</ilce>
+    </adres>
+    <dersler>
+      <ders>Matematik</ders>
+      <ders>Fizik</ders>
+      <ders>Kimya</ders>
+      <ders>Edebiyat</ders>
+    </dersler>
+  </ogrenci>
+  <ogrenci no="4">
+    <ad>filiz</ad>
+    <soyad>akın</soyad>
+    <yas>33</yas>
+    <adres>
+      <il>İstanbul</il>
+      <ilce>Şişli</ilce>
+    </adres>
+    <dersler>
+      <ders>Matematik</ders>
+      <ders>Fizik</ders>
+      <ders>Kimya</ders>
+      <ders>Edebiyat</ders>
+    </dersler>
+  </ogrenci>
+</tns:ogrenciler>

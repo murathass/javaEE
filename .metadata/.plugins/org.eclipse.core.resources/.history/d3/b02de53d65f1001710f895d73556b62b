@@ -1,0 +1,13 @@
+package marshallingSample;
+
+import javax.xml.bind.annotation.*;
+
+public class Ogrenci {
+
+	@XmlRootElement
+	@XmlAccessorType(XmlAccessType.FIELD)
+	@XmlType(name="ogrenciTipi",propOrder = {"ad","soyad","ders"})
+	public Ogrenci() {
+		
+	}
+}

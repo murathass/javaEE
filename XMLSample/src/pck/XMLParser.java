@@ -1,0 +1,65 @@
+package pck;
+
+import java.io.File;
+
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class XMLParser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc =  builder.parse(new File("Ogrenci.xml"));
+			Element root = doc.getDocumentElement();
+			NodeList nList = root.getElementsByTagName("tns:ogrenci");
+			
+			
+			for (int i = 0; i < nList.getLength(); i++) {
+				Node nNode = nList.item(i);
+				System.out.println("\nCurrent Element :" + nNode.getNodeName());
+
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+					Element eElement = (Element) nNode;
+
+					System.out.println("Student name : " + eElement.getElementsByTagName("tns:ad").item(0).getTextContent());
+					System.out.println("Student surname : " + eElement.getElementsByTagName("tns:soyad").item(0).getTextContent());
+					System.out.println("Student age : " + eElement.getElementsByTagName("tns:yas").item(0).getTextContent());
+					
+					NodeList altNodeLists = eElement.getElementsByTagName("tns:adres");
+					
+					for (int j = 0; j < altNodeLists.getLength(); j++) {
+						Node nnNode = altNodeLists.item(j);
+						System.out.println("Student adres"+nnNode.getNodeName());
+						if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+							System.out.println("Student province : " + eElement.getElementsByTagName("tns:il").item(0).getTextContent());
+							System.out.println("Student subprovince : " + eElement.getElementsByTagName("tns:ilce").item(0).getTextContent());
+		
+						}
+					}
+					
+					System.out.println();
+					System.out.println();
+					System.out.println("**********************************");
+
+				}
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

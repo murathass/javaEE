@@ -1,0 +1,48 @@
+package pck;
+
+import java.io.File;
+
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class XMLParser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc =  builder.parse(new File("Ogrenci.xml"));
+			Element root = doc.getDocumentElement();
+			NodeList nList = root.getElementsByTagName("tns:ogrenci");
+			
+			
+			for (int i = 0; i < nList.getLength(); i++) {
+				Node nNode = nList.item(i);
+				System.out.println("\nCurrent Element :" + nNode.getNodeName());
+
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+					Element eElement = (Element) nNode;
+
+					System.out.println("Staff id : " + eElement.getElementsByTagName("tns:ad");
+					
+
+				}
+			}
+			
+		}catch(Exception e) {
+			
+		}
+		
+	}
+
+}

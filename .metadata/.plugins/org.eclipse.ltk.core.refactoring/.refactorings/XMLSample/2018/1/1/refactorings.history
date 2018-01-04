@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Ogrenci.xml&apos; to &apos;XMLJAXBSample&apos;&#x0A;- Original project: &apos;XMLSample&apos;&#x0A;- Destination element: &apos;XMLJAXBSample&apos;&#x0A;- Original element: &apos;Ogrenci.xml&apos;" description="Copy file" destination="=XMLJAXBSample" element1="Ogrenci.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1515079414053" units="0" version="1.0"/>
+</session>

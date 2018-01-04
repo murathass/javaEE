@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ogrenciler xmlns:tns="http://www.example.org/Ogrenci" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Ogrenci Ogrenci.xsd ">
+  
+  
+  <tns:ogrenci no="1">
+    <tns:ad>Murat</tns:ad>
+    <tns:soyad>Has</tns:soyad>
+    <tns:yas>25</tns:yas>
+    <tns:adres>
+      <tns:il>Mersin</tns:il>
+      <tns:ilce>Merkez</tns:ilce>
+    </tns:adres>
+    <tns:dersler>
+      <tns:ders>javaEE</tns:ders>
+      <tns:ilce></tns:ilce>
+    </tns:dersler>
+  </tns:ogrenci>
+  
+  
+  <tns:ogrenci no="2">
+    <tns:ad>Ali</tns:ad>
+    <tns:soyad>Has</tns:soyad>
+    <tns:yas>25</tns:yas>
+    <tns:adres>
+      <tns:il>Mersin</tns:il>
+      <tns:ilce>Merkez</tns:ilce>
+    </tns:adres>
+    <tns:dersler>
+      <tns:ders>javaEE</tns:ders>
+      <tns:ilce></tns:ilce>
+    </tns:dersler>
+  </tns:ogrenci>
+  
+  
+  <tns:ogrenci no="3">
+    <tns:ad>Mehmet</tns:ad>
+    <tns:soyad>Has</tns:soyad>
+    <tns:yas>25</tns:yas>
+    <tns:adres>
+      <tns:il>Mersin</tns:il>
+      <tns:ilce>Merkez</tns:ilce>
+    </tns:adres>
+    <tns:dersler>
+      <tns:ders>javaEE</tns:ders>
+      <tns:ilce></tns:ilce>
+    </tns:dersler>
+  </tns:ogrenci>
+  
+</tns:ogrenciler>
