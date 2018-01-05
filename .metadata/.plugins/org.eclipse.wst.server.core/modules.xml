@@ -3,4 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:test" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:web2" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:web1" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:web3" serverId="Tomcat v8.0 Server at localhost"/>
 </modules>

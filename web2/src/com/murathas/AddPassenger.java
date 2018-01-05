@@ -17,14 +17,17 @@ public class AddPassenger extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		RequestDispatcher view = request.getRequestDispatcher("/Views/add_passanger.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("/Views/add_passenger.jsp");
 		view.forward(request, response);
 		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		String firstname = request.getParameter("firstname");
+		System.out.println("firstname: "+firstname);
+		String lastname = request.getParameter("lasstname");
+		System.out.println("lasstname: "+lastname);
 	}
 
 }
